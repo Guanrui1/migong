@@ -1,0 +1,723 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style>
+			table{margin: 0px auto; margin-top: 100px;}
+			td{width: 20px; height: 20px; border: 1px solid black;}
+		</style>
+		<script src="https://cdn.bootcss.com/jquery/1.12.4/jquery.min.js"></script>
+	</head>
+	<body>
+		<table cellspacing="0" border="1">
+			<tr>
+				<td></td><td></td><td></td><td></td>
+				<td></td><td></td><td></td><td></td>
+				<td></td><td></td><td></td><td></td>
+				<td></td><td></td><td></td><td></td>
+			</tr>
+			<tr>
+				<td></td><td></td><td></td><td></td>
+				<td></td><td></td><td></td><td></td>
+				<td></td><td></td><td></td><td></td>
+				<td></td><td></td><td></td><td></td>
+			</tr>
+			<tr>
+				<td></td><td></td><td></td><td></td>
+				<td></td><td></td><td></td><td></td>
+				<td></td><td></td><td></td><td></td>
+				<td></td><td></td><td></td><td></td>
+			</tr>
+			<tr>
+				<td></td><td></td><td></td><td></td>
+				<td></td><td></td><td></td><td></td>
+				<td></td><td></td><td></td><td></td>
+				<td></td><td></td><td></td><td></td>
+			</tr>
+			<tr>
+				<td></td><td></td><td></td><td></td>
+				<td></td><td></td><td></td><td></td>
+				<td></td><td></td><td></td><td></td>
+				<td></td><td></td><td></td><td></td>
+			</tr>
+			<tr>
+				<td></td><td></td><td></td><td></td>
+				<td></td><td></td><td></td><td></td>
+				<td></td><td></td><td></td><td></td>
+				<td></td><td></td><td></td><td></td>
+			</tr>
+			<tr>
+				<td></td><td></td><td></td><td></td>
+				<td></td><td></td><td></td><td></td>
+				<td></td><td></td><td></td><td></td>
+				<td></td><td></td><td></td><td></td>
+			</tr>
+			<tr>
+				<td></td><td></td><td></td><td></td>
+				<td></td><td></td><td></td><td></td>
+				<td></td><td></td><td></td><td></td>
+				<td></td><td></td><td></td><td></td>
+			</tr>
+			<tr>
+				<td></td><td></td><td></td><td></td>
+				<td></td><td></td><td></td><td></td>
+				<td></td><td></td><td></td><td></td>
+				<td></td><td></td><td></td><td></td>
+			</tr>
+			<tr>
+				<td></td><td></td><td></td><td></td>
+				<td></td><td></td><td></td><td></td>
+				<td></td><td></td><td></td><td></td>
+				<td></td><td></td><td></td><td></td>
+			</tr>
+			<tr>
+				<td></td><td></td><td></td><td></td>
+				<td></td><td></td><td></td><td></td>
+				<td></td><td></td><td></td><td></td>
+				<td></td><td></td><td></td><td></td>
+			</tr>
+			<tr>
+				<td></td><td></td><td></td><td></td>
+				<td></td><td></td><td></td><td></td>
+				<td></td><td></td><td></td><td></td>
+				<td></td><td></td><td></td><td></td>
+			</tr>
+			<tr>
+				<td></td><td></td><td></td><td></td>
+				<td></td><td></td><td></td><td></td>
+				<td></td><td></td><td></td><td></td>
+				<td></td><td></td><td></td><td></td>
+			</tr>
+			<tr>
+				<td></td><td></td><td></td><td></td>
+				<td></td><td></td><td></td><td></td>
+				<td></td><td></td><td></td><td></td>
+				<td></td><td></td><td></td><td></td>
+			</tr>
+			<tr>
+				<td></td><td></td><td></td><td></td>
+				<td></td><td></td><td></td><td></td>
+				<td></td><td></td><td></td><td></td>
+				<td></td><td></td><td></td><td></td>
+			</tr>
+			<tr>
+				<td></td><td></td><td></td><td></td>
+				<td></td><td></td><td></td><td></td>
+				<td></td><td></td><td></td><td></td>
+				<td></td><td></td><td></td><td></td>
+			</tr>
+		</table>
+	</body>
+</html>
+
+<script>
+	$(function(){
+		var int;
+		var x = 0;
+		var y = 0;
+		for(var i=0;i<16;i++){
+			for(var j=0;j<16;j++){
+				$("tr")[i].children[j].style.borderLeft = "1px solid black";
+				$("tr")[i].children[j].style.borderTop = "1px solid black";
+				$("tr")[i].children[j].style.borderRight = "1px solid black";
+				$("tr")[i].children[j].style.borderBottom = "1px solid black";
+			}
+		}
+		//第一列
+		$("tr")[y].children[x].style.backgroundColor = "red";
+		$("tr")[0].children[0].style.borderBottom = 0;
+		$("tr")[1].children[0].style.borderTop = 0;
+		$("tr")[1].children[0].style.borderBottom = 0;
+		$("tr")[2].children[0].style.borderTop = 0;
+		$("tr")[2].children[0].style.borderBottom = 0;
+		$("tr")[2].children[0].style.borderRight = 0;
+		$("tr")[3].children[0].style.borderTop = 0;
+		$("tr")[4].children[0].style.borderRight = 0;
+		$("tr")[5].children[0].style.borderRight = 0;
+		$("tr")[6].children[0].style.borderBottom = 0;
+		$("tr")[7].children[0].style.borderBottom = 0;
+		$("tr")[7].children[0].style.borderTop = 0;
+		$("tr")[8].children[0].style.borderBottom = 0;
+		$("tr")[8].children[0].style.borderTop = 0;
+		$("tr")[9].children[0].style.borderBottom = 0;
+		$("tr")[9].children[0].style.borderTop = 0;
+		$("tr")[10].children[0].style.borderBottom = 0;
+		$("tr")[10].children[0].style.borderTop = 0;
+		$("tr")[11].children[0].style.borderTop = 0;
+		$("tr")[11].children[0].style.borderRight = 0;
+		$("tr")[12].children[0].style.borderRight = 0;
+		$("tr")[13].children[0].style.borderBottom = 0;
+		$("tr")[14].children[0].style.borderBottom = 0;
+		$("tr")[14].children[0].style.borderTop = 0;
+		$("tr")[15].children[0].style.borderTop = 0;
+		$("tr")[15].children[0].style.borderRight = 0;
+		//第二列
+		$("tr")[0].children[1].style.borderBottom = 0;
+		$("tr")[0].children[1].style.borderRight = 0;
+		$("tr")[1].children[1].style.borderTop = 0;
+		$("tr")[1].children[1].style.borderRight = 0;
+		$("tr")[2].children[1].style.borderBottom = 0;
+		$("tr")[2].children[1].style.borderRight = 0;
+		$("tr")[2].children[1].style.borderLeft = 0;
+		$("tr")[3].children[1].style.borderBottom = 0;
+		$("tr")[3].children[1].style.borderTop = 0;
+		$("tr")[4].children[1].style.borderBottom = 0;
+		$("tr")[4].children[1].style.borderTop = 0;
+		$("tr")[4].children[1].style.borderLeft = 0;
+		$("tr")[5].children[1].style.borderBottom = 0;
+		$("tr")[5].children[1].style.borderTop = 0;
+		$("tr")[5].children[1].style.borderLeft = 0;
+		$("tr")[6].children[1].style.borderBottom = 0;
+		$("tr")[6].children[1].style.borderTop = 0;
+		$("tr")[7].children[1].style.borderBottom = 0;
+		$("tr")[7].children[1].style.borderTop = 0;
+		$("tr")[8].children[1].style.borderBottom = 0;
+		$("tr")[8].children[1].style.borderTop = 0;
+		$("tr")[9].children[1].style.borderBottom = 0;
+		$("tr")[9].children[1].style.borderTop = 0;
+		$("tr")[10].children[1].style.borderBottom = 0;
+		$("tr")[10].children[1].style.borderTop = 0;
+		$("tr")[11].children[1].style.borderTop = 0;
+		$("tr")[11].children[1].style.borderLeft = 0;
+		$("tr")[12].children[1].style.borderBottom = 0;
+		$("tr")[12].children[1].style.borderRight = 0;
+		$("tr")[12].children[1].style.borderLeft = 0;
+		$("tr")[13].children[1].style.borderBottom = 0;
+		$("tr")[13].children[1].style.borderTop = 0;
+		$("tr")[14].children[1].style.borderBottom = 0;
+		$("tr")[14].children[1].style.borderTop = 0;
+		$("tr")[14].children[1].style.borderRight = 0;
+		$("tr")[15].children[1].style.borderTop = 0;
+		$("tr")[15].children[1].style.borderLeft = 0;
+		//第三列
+		$("tr")[0].children[2].style.borderBottom = 0;
+		$("tr")[0].children[2].style.borderLeft = 0;
+		$("tr")[1].children[2].style.borderTop = 0;
+		$("tr")[1].children[2].style.borderLeft = 0;
+		$("tr")[2].children[2].style.borderLeft = 0;
+		$("tr")[2].children[2].style.borderBottom = 0;
+		$("tr")[3].children[2].style.borderBottom = 0;
+		$("tr")[3].children[2].style.borderTop = 0;
+		$("tr")[4].children[2].style.borderBottom = 0;
+		$("tr")[4].children[2].style.borderTop = 0;
+		$("tr")[5].children[2].style.borderBottom = 0;
+		$("tr")[5].children[2].style.borderTop = 0;
+		$("tr")[6].children[2].style.borderTop = 0;
+		$("tr")[6].children[2].style.borderRight = 0;
+		$("tr")[7].children[2].style.borderBottom = 0;
+		$("tr")[7].children[2].style.borderRight = 0;
+		$("tr")[8].children[2].style.borderBottom = 0;
+		$("tr")[8].children[2].style.borderTop = 0;
+		$("tr")[9].children[2].style.borderBottom = 0;
+		$("tr")[9].children[2].style.borderTop = 0;
+		$("tr")[10].children[2].style.borderBottom = 0;
+		$("tr")[10].children[2].style.borderTop = 0;
+		$("tr")[11].children[2].style.borderBottom = 0;
+		$("tr")[11].children[2].style.borderTop = 0;
+		$("tr")[12].children[2].style.borderTop = 0;
+		$("tr")[12].children[2].style.borderLeft = 0;
+		$("tr")[13].children[2].style.borderRight = 0;
+		$("tr")[14].children[2].style.borderLeft = 0;
+		$("tr")[14].children[2].style.borderRight = 0;
+		$("tr")[15].children[2].style.borderRight = 0;
+		//第四列
+		$("tr")[0].children[3].style.borderBottom = 0;
+		$("tr")[0].children[3].style.borderRight = 0;
+		$("tr")[1].children[3].style.borderTop = 0;
+		$("tr")[1].children[3].style.borderRight = 0;
+		$("tr")[2].children[3].style.borderBottom = 0;
+		$("tr")[2].children[3].style.borderRight = 0;
+		$("tr")[3].children[3].style.borderBottom = 0;
+		$("tr")[3].children[3].style.borderTop = 0;
+		$("tr")[4].children[3].style.borderBottom = 0;
+		$("tr")[4].children[3].style.borderTop = 0;
+		$("tr")[5].children[3].style.borderBottom = 0;
+		$("tr")[5].children[3].style.borderTop = 0;
+		$("tr")[6].children[3].style.borderTop = 0;
+		$("tr")[6].children[3].style.borderLeft = 0;
+		$("tr")[7].children[3].style.borderRight = 0;
+		$("tr")[7].children[3].style.borderLeft = 0;
+		$("tr")[8].children[3].style.borderBottom = 0;
+		$("tr")[9].children[3].style.borderBottom = 0;
+		$("tr")[9].children[3].style.borderTop = 0;
+		$("tr")[10].children[3].style.borderBottom = 0;
+		$("tr")[10].children[3].style.borderTop = 0;
+		$("tr")[10].children[3].style.borderRight = 0;
+		$("tr")[11].children[3].style.borderBottom = 0;
+		$("tr")[11].children[3].style.borderTop = 0;
+		$("tr")[12].children[3].style.borderBottom = 0;
+		$("tr")[12].children[3].style.borderTop = 0;
+		$("tr")[13].children[3].style.borderTop = 0;
+		$("tr")[13].children[3].style.borderRight = 0;
+		$("tr")[13].children[3].style.borderLeft = 0;
+		$("tr")[14].children[3].style.borderRight = 0;
+		$("tr")[14].children[3].style.borderLeft = 0;
+		$("tr")[15].children[3].style.borderRight = 0;
+		$("tr")[15].children[3].style.borderLeft = 0;
+		//第五列
+		$("tr")[0].children[4].style.borderBottom = 0;
+		$("tr")[0].children[4].style.borderRight = 0;
+		$("tr")[0].children[4].style.borderLeft = 0;
+		$("tr")[1].children[4].style.borderTop = 0;
+		$("tr")[1].children[4].style.borderLeft = 0;
+		$("tr")[2].children[4].style.borderRight = 0;
+		$("tr")[2].children[4].style.borderLeft = 0;
+		$("tr")[3].children[4].style.borderBottom = 0;
+		$("tr")[4].children[4].style.borderBottom = 0;
+		$("tr")[4].children[4].style.borderTop = 0;
+		$("tr")[5].children[4].style.borderBottom = 0;
+		$("tr")[5].children[4].style.borderTop = 0;
+		$("tr")[6].children[4].style.borderBottom = 0;
+		$("tr")[6].children[4].style.borderTop = 0;
+		$("tr")[7].children[4].style.borderBottom = 0;
+		$("tr")[7].children[4].style.borderTop = 0;
+		$("tr")[7].children[4].style.borderLeft = 0;
+		$("tr")[8].children[4].style.borderBottom = 0;
+		$("tr")[8].children[4].style.borderTop = 0;
+		$("tr")[9].children[4].style.borderTop = 0;
+		$("tr")[9].children[4].style.borderRight = 0;
+		$("tr")[10].children[4].style.borderRight = 0;
+		$("tr")[10].children[4].style.borderLeft = 0;
+		$("tr")[11].children[4].style.borderBottom = 0;
+		$("tr")[11].children[4].style.borderRight = 0;
+		$("tr")[12].children[4].style.borderTop = 0;
+		$("tr")[12].children[4].style.borderRight = 0;
+		$("tr")[13].children[4].style.borderRight = 0;
+		$("tr")[13].children[4].style.borderLeft = 0;
+		$("tr")[14].children[4].style.borderRight = 0;
+		$("tr")[14].children[4].style.borderLeft = 0;
+		$("tr")[15].children[4].style.borderRight = 0;
+		$("tr")[15].children[4].style.borderLeft = 0;
+		//第六列
+		$("tr")[0].children[5].style.borderRight = 0;
+		$("tr")[0].children[5].style.borderLeft = 0;
+		$("tr")[1].children[5].style.borderBottom = 0;
+		$("tr")[2].children[5].style.borderBottom = 0;
+		$("tr")[2].children[5].style.borderTop = 0;
+		$("tr")[2].children[5].style.borderLeft = 0;
+		$("tr")[3].children[5].style.borderBottom = 0;
+		$("tr")[3].children[5].style.borderTop = 0;
+		$("tr")[4].children[5].style.borderBottom = 0;
+		$("tr")[4].children[5].style.borderTop = 0;
+		$("tr")[5].children[5].style.borderBottom = 0;
+		$("tr")[5].children[5].style.borderTop = 0;
+		$("tr")[6].children[5].style.borderBottom = 0;
+		$("tr")[6].children[5].style.borderTop = 0;
+		$("tr")[7].children[5].style.borderBottom = 0;
+		$("tr")[7].children[5].style.borderTop = 0;
+		$("tr")[8].children[5].style.borderBottom = 0;
+		$("tr")[8].children[5].style.borderTop = 0;
+		$("tr")[9].children[5].style.borderTop = 0;
+		$("tr")[9].children[5].style.borderLeft = 0;
+		$("tr")[10].children[5].style.borderRight = 0;
+		$("tr")[10].children[5].style.borderLeft = 0;
+		$("tr")[11].children[5].style.borderBottom = 0;
+		$("tr")[11].children[5].style.borderRight = 0;
+		$("tr")[11].children[5].style.borderLeft = 0;
+		$("tr")[12].children[5].style.borderTop = 0;
+		$("tr")[12].children[5].style.borderRight = 0;
+		$("tr")[12].children[5].style.borderLeft = 0;
+		$("tr")[13].children[5].style.borderRight = 0;
+		$("tr")[13].children[5].style.borderLeft = 0;
+		$("tr")[14].children[5].style.borderRight = 0;
+		$("tr")[14].children[5].style.borderLeft = 0;
+		$("tr")[15].children[5].style.borderRight = 0;
+		$("tr")[15].children[5].style.borderLeft = 0;
+		//第七列
+		$("tr")[0].children[6].style.borderBottom = 0;
+		$("tr")[0].children[6].style.borderLeft = 0;
+		$("tr")[1].children[6].style.borderBottom = 0;
+		$("tr")[1].children[6].style.borderTop = 0;
+		$("tr")[2].children[6].style.borderBottom = 0;
+		$("tr")[2].children[6].style.borderTop = 0;
+		$("tr")[3].children[6].style.borderBottom = 0;
+		$("tr")[3].children[6].style.borderTop = 0;
+		$("tr")[4].children[6].style.borderBottom = 0;
+		$("tr")[4].children[6].style.borderTop = 0;
+		$("tr")[5].children[6].style.borderBottom = 0;
+		$("tr")[5].children[6].style.borderTop = 0;
+		$("tr")[6].children[6].style.borderBottom = 0;
+		$("tr")[6].children[6].style.borderTop = 0;
+		$("tr")[7].children[6].style.borderBottom = 0;
+		$("tr")[7].children[6].style.borderTop = 0;
+		$("tr")[7].children[6].style.borderRight = 0;
+		$("tr")[8].children[6].style.borderTop = 0;
+		$("tr")[8].children[6].style.borderRight = 0;
+		$("tr")[9].children[6].style.borderBottom = 0;
+		$("tr")[9].children[6].style.borderRight = 0;
+		$("tr")[10].children[6].style.borderTop = 0;
+		$("tr")[10].children[6].style.borderRight = 0;
+		$("tr")[10].children[6].style.borderLeft = 0;
+		$("tr")[11].children[6].style.borderLeft = 0;
+		$("tr")[11].children[6].style.borderBottom = 0;
+		$("tr")[12].children[6].style.borderTop = 0;
+		$("tr")[12].children[6].style.borderRight = 0;
+		$("tr")[12].children[6].style.borderLeft = 0;
+		$("tr")[13].children[6].style.borderLeft = 0;
+		$("tr")[14].children[6].style.borderRight = 0;
+		$("tr")[14].children[6].style.borderLeft = 0;
+		$("tr")[15].children[6].style.borderRight = 0;
+		$("tr")[15].children[6].style.borderLeft = 0;
+		//第八列
+		$("tr")[0].children[7].style.borderBottom = 0;
+		$("tr")[0].children[7].style.borderRight = 0;
+		$("tr")[1].children[7].style.borderBottom = 0;
+		$("tr")[1].children[7].style.borderTop = 0;
+		$("tr")[2].children[7].style.borderBottom = 0;
+		$("tr")[2].children[7].style.borderTop = 0;
+		$("tr")[3].children[7].style.borderBottom = 0;
+		$("tr")[3].children[7].style.borderTop = 0;
+		$("tr")[4].children[7].style.borderBottom = 0;
+		$("tr")[4].children[7].style.borderTop = 0;
+		$("tr")[5].children[7].style.borderBottom = 0;
+		$("tr")[5].children[7].style.borderTop = 0;
+		$("tr")[6].children[7].style.borderTop = 0;
+		$("tr")[6].children[7].style.borderRight = 0;
+		$("tr")[7].children[7].style.borderBottom = 0;
+		$("tr")[7].children[7].style.borderRight = 0;
+		$("tr")[7].children[7].style.borderLeft = 0;
+		$("tr")[8].children[7].style.borderTop = 0;
+		$("tr")[8].children[7].style.borderRight = 0;
+		$("tr")[8].children[7].style.borderLeft = 0;
+		$("tr")[9].children[7].style.borderBottom = 0;
+		$("tr")[9].children[7].style.borderRight = 0;
+		$("tr")[9].children[7].style.borderLeft = 0;
+		$("tr")[10].children[7].style.borderBottom = 0;
+		$("tr")[10].children[7].style.borderTop = 0;
+		$("tr")[10].children[7].style.borderLeft = 0;
+		$("tr")[11].children[7].style.borderBottom = 0;
+		$("tr")[11].children[7].style.borderTop = 0;
+		$("tr")[12].children[7].style.borderBottom = 0;
+		$("tr")[12].children[7].style.borderTop = 0;
+		$("tr")[12].children[7].style.borderLeft = 0;
+		$("tr")[13].children[7].style.borderBottom = 0;
+		$("tr")[13].children[7].style.borderTop = 0;
+		$("tr")[14].children[7].style.borderTop = 0;
+		$("tr")[14].children[7].style.borderLeft = 0;
+		$("tr")[15].children[7].style.borderRight = 0;
+		$("tr")[15].children[7].style.borderLeft = 0;
+		//第九列
+		$("tr")[0].children[8].style.borderRight = 0;
+		$("tr")[0].children[8].style.borderLeft = 0;
+		$("tr")[1].children[8].style.borderBottom = 0;
+		$("tr")[1].children[8].style.borderRight = 0;
+		$("tr")[2].children[8].style.borderBottom = 0;
+		$("tr")[2].children[8].style.borderTop = 0;
+		$("tr")[3].children[8].style.borderBottom = 0;
+		$("tr")[3].children[8].style.borderTop = 0;
+		$("tr")[4].children[8].style.borderBottom = 0;
+		$("tr")[4].children[8].style.borderTop = 0;
+		$("tr")[5].children[8].style.borderTop = 0;
+		$("tr")[5].children[8].style.borderRight = 0;
+		$("tr")[6].children[8].style.borderRight = 0;
+		$("tr")[6].children[8].style.borderLeft = 0;
+		$("tr")[7].children[8].style.borderBottom = 0;
+		$("tr")[7].children[8].style.borderRight = 0;
+		$("tr")[7].children[8].style.borderLeft = 0;
+		$("tr")[8].children[8].style.borderTop = 0;
+		$("tr")[8].children[8].style.borderRight = 0;
+		$("tr")[8].children[8].style.borderLeft = 0;
+		$("tr")[9].children[8].style.borderBottom = 0;
+		$("tr")[9].children[8].style.borderLeft = 0;
+		$("tr")[10].children[8].style.borderBottom = 0;
+		$("tr")[10].children[8].style.borderTop = 0;
+		$("tr")[11].children[8].style.borderBottom = 0;
+		$("tr")[11].children[8].style.borderTop = 0;
+		$("tr")[12].children[8].style.borderBottom = 0;
+		$("tr")[12].children[8].style.borderTop = 0;
+		$("tr")[13].children[8].style.borderBottom = 0;
+		$("tr")[13].children[8].style.borderTop = 0;
+		$("tr")[14].children[8].style.borderBottom = 0;
+		$("tr")[14].children[8].style.borderTop = 0;
+		$("tr")[15].children[8].style.borderTop = 0;
+		$("tr")[15].children[8].style.borderRight = 0;
+		$("tr")[15].children[8].style.borderLeft = 0;
+		//第十列
+		$("tr")[0].children[9].style.borderRight = 0;
+		$("tr")[0].children[9].style.borderLeft = 0;
+		$("tr")[1].children[9].style.borderBottom = 0;
+		$("tr")[1].children[9].style.borderRight = 0;
+		$("tr")[1].children[9].style.borderLeft = 0;
+		$("tr")[2].children[9].style.borderBottom = 0;
+		$("tr")[2].children[9].style.borderTop = 0;
+		$("tr")[2].children[9].style.borderRight = 0;
+		$("tr")[3].children[9].style.borderBottom = 0;
+		$("tr")[3].children[9].style.borderTop = 0;
+		$("tr")[4].children[9].style.borderTop = 0;
+		$("tr")[5].children[9].style.borderRight = 0;
+		$("tr")[5].children[9].style.borderLeft = 0;
+		$("tr")[6].children[9].style.borderRight = 0;
+		$("tr")[6].children[9].style.borderLeft = 0;
+		$("tr")[7].children[9].style.borderBottom = 0;
+		$("tr")[7].children[9].style.borderRight = 0;
+		$("tr")[7].children[9].style.borderLeft = 0;
+		$("tr")[8].children[9].style.borderTop = 0;
+		$("tr")[8].children[9].style.borderLeft = 0;
+		$("tr")[9].children[9].style.borderBottom = 0;
+		$("tr")[10].children[9].style.borderBottom = 0;
+		$("tr")[10].children[9].style.borderTop = 0;
+		$("tr")[11].children[9].style.borderBottom = 0;
+		$("tr")[11].children[9].style.borderTop = 0;
+		$("tr")[12].children[9].style.borderBottom = 0;
+		$("tr")[12].children[9].style.borderTop = 0;
+		$("tr")[13].children[9].style.borderBottom = 0;
+		$("tr")[13].children[9].style.borderTop = 0;
+		$("tr")[14].children[9].style.borderBottom = 0;
+		$("tr")[14].children[9].style.borderTop = 0;
+		$("tr")[15].children[9].style.borderTop = 0;
+		$("tr")[15].children[9].style.borderRight = 0;
+		$("tr")[15].children[9].style.borderLeft = 0;
+		//第十一列
+		$("tr")[0].children[10].style.borderRight = 0;
+		$("tr")[0].children[10].style.borderLeft = 0;
+		$("tr")[1].children[10].style.borderBottom = 0;
+		$("tr")[1].children[10].style.borderRight = 0;
+		$("tr")[1].children[10].style.borderLeft = 0;
+		$("tr")[2].children[10].style.borderTop = 0;
+		$("tr")[2].children[10].style.borderLeft = 0;
+		$("tr")[3].children[10].style.borderBottom = 0;
+		$("tr")[3].children[10].style.borderRight = 0;
+		$("tr")[4].children[10].style.borderTop = 0;
+		$("tr")[4].children[10].style.borderRight = 0;
+		$("tr")[5].children[10].style.borderRight = 0;
+		$("tr")[5].children[10].style.borderLeft = 0;
+		$("tr")[6].children[10].style.borderRight = 0;
+		$("tr")[6].children[10].style.borderLeft = 0;
+		$("tr")[7].children[10].style.borderRight = 0;
+		$("tr")[7].children[10].style.borderLeft = 0;
+		$("tr")[8].children[10].style.borderBottom = 0;
+		$("tr")[8].children[10].style.borderRight = 0;
+		$("tr")[9].children[10].style.borderBottom = 0;
+		$("tr")[9].children[10].style.borderTop = 0;
+		$("tr")[10].children[10].style.borderBottom = 0;
+		$("tr")[10].children[10].style.borderTop = 0;
+		$("tr")[11].children[10].style.borderBottom = 0;
+		$("tr")[11].children[10].style.borderTop = 0;
+		$("tr")[11].children[10].style.borderRight = 0;
+		$("tr")[12].children[10].style.borderBottom = 0;
+		$("tr")[12].children[10].style.borderTop = 0;
+		$("tr")[13].children[10].style.borderBottom = 0;
+		$("tr")[13].children[10].style.borderTop = 0;
+		$("tr")[14].children[10].style.borderTop = 0;
+		$("tr")[14].children[10].style.borderRight = 0;
+		$("tr")[15].children[10].style.borderRight = 0;
+		$("tr")[15].children[10].style.borderLeft = 0;
+		//第十二列
+		$("tr")[0].children[11].style.borderRight = 0;
+		$("tr")[0].children[11].style.borderLeft = 0;
+		$("tr")[1].children[11].style.borderRight = 0;
+		$("tr")[1].children[11].style.borderLeft = 0;
+		$("tr")[2].children[11].style.borderBottom = 0;
+		$("tr")[3].children[11].style.borderBottom = 0;
+		$("tr")[3].children[11].style.borderTop = 0;
+		$("tr")[3].children[11].style.borderLeft = 0;
+		$("tr")[4].children[11].style.borderTop = 0;
+		$("tr")[4].children[11].style.borderLeft = 0;
+		$("tr")[5].children[11].style.borderRight = 0;
+		$("tr")[5].children[11].style.borderLeft = 0;
+		$("tr")[6].children[11].style.borderRight = 0;
+		$("tr")[6].children[11].style.borderLeft = 0;
+		$("tr")[7].children[11].style.borderRight = 0;
+		$("tr")[7].children[11].style.borderLeft = 0;
+		$("tr")[8].children[11].style.borderRight = 0;
+		$("tr")[8].children[11].style.borderLeft = 0;
+		$("tr")[9].children[11].style.borderBottom = 0;
+		$("tr")[9].children[11].style.borderRight = 0;
+		$("tr")[10].children[11].style.borderTop = 0;
+		$("tr")[10].children[11].style.borderRight = 0;
+		$("tr")[11].children[11].style.borderRight = 0;
+		$("tr")[11].children[11].style.borderLeft = 0;
+		$("tr")[12].children[11].style.borderBottom = 0;
+		$("tr")[12].children[11].style.borderRight = 0;
+		$("tr")[13].children[11].style.borderBottom = 0;
+		$("tr")[13].children[11].style.borderTop = 0;
+		$("tr")[13].children[11].style.borderRight = 0;
+		$("tr")[14].children[11].style.borderTop = 0;
+		$("tr")[14].children[11].style.borderRight = 0;
+		$("tr")[14].children[11].style.borderLeft = 0;
+		$("tr")[15].children[11].style.borderRight = 0;
+		$("tr")[15].children[11].style.borderLeft = 0;
+		//第十三列
+		$("tr")[0].children[12].style.borderRight = 0;
+		$("tr")[0].children[12].style.borderLeft = 0;
+		$("tr")[1].children[12].style.borderBottom = 0;
+		$("tr")[1].children[12].style.borderLeft = 0;
+		$("tr")[2].children[12].style.borderBottom = 0;
+		$("tr")[2].children[12].style.borderTop = 0;
+		$("tr")[3].children[12].style.borderBottom = 0;
+		$("tr")[3].children[12].style.borderTop = 0;
+		$("tr")[4].children[12].style.borderTop = 0;
+		$("tr")[4].children[12].style.borderRight = 0;
+		$("tr")[5].children[12].style.borderRight = 0;
+		$("tr")[5].children[12].style.borderLeft = 0;
+		$("tr")[6].children[12].style.borderRight = 0;
+		$("tr")[6].children[12].style.borderLeft = 0;
+		$("tr")[7].children[12].style.borderLeft = 0;
+		$("tr")[8].children[12].style.borderRight = 0;
+		$("tr")[8].children[12].style.borderLeft = 0;
+		$("tr")[9].children[12].style.borderBottom = 0;
+		$("tr")[9].children[12].style.borderRight = 0;
+		$("tr")[9].children[12].style.borderLeft = 0;
+		$("tr")[10].children[12].style.borderTop = 0;
+		$("tr")[10].children[12].style.borderRight = 0;
+		$("tr")[10].children[12].style.borderLeft = 0;
+		$("tr")[11].children[12].style.borderRight = 0;
+		$("tr")[11].children[12].style.borderLeft = 0;
+		$("tr")[12].children[12].style.borderBottom = 0;
+		$("tr")[12].children[12].style.borderLeft = 0;
+		$("tr")[13].children[12].style.borderBottom = 0;
+		$("tr")[13].children[12].style.borderTop = 0;
+		$("tr")[13].children[12].style.borderLeft = 0;
+		$("tr")[14].children[12].style.borderTop = 0;
+		$("tr")[14].children[12].style.borderLeft = 0;
+		$("tr")[15].children[12].style.borderRight = 0;
+		$("tr")[15].children[12].style.borderLeft = 0;
+		//第十四列
+		$("tr")[0].children[13].style.borderBottom = 0;
+		$("tr")[0].children[13].style.borderLeft = 0;
+		$("tr")[1].children[13].style.borderBottom = 0;
+		$("tr")[1].children[13].style.borderTop = 0;
+		$("tr")[2].children[13].style.borderBottom = 0;
+		$("tr")[2].children[13].style.borderTop = 0;
+		$("tr")[3].children[13].style.borderBottom = 0;
+		$("tr")[3].children[13].style.borderTop = 0;
+		$("tr")[4].children[13].style.borderTop = 0;
+		$("tr")[4].children[13].style.borderLeft = 0;
+		$("tr")[5].children[13].style.borderRight = 0;
+		$("tr")[5].children[13].style.borderLeft = 0;
+		$("tr")[6].children[13].style.borderBottom = 0;
+		$("tr")[6].children[13].style.borderLeft = 0;
+		$("tr")[7].children[13].style.borderBottom = 0;
+		$("tr")[7].children[13].style.borderTop = 0;
+		$("tr")[8].children[13].style.borderTop = 0;
+		$("tr")[8].children[13].style.borderLeft = 0;
+		$("tr")[9].children[13].style.borderBottom = 0;
+		$("tr")[9].children[13].style.borderRight = 0;
+		$("tr")[9].children[13].style.borderLeft = 0;
+		$("tr")[10].children[13].style.borderTop = 0;
+		$("tr")[10].children[13].style.borderRight = 0;
+		$("tr")[10].children[13].style.borderLeft = 0;
+		$("tr")[11].children[13].style.borderBottom = 0;
+		$("tr")[11].children[13].style.borderLeft = 0;
+		$("tr")[12].children[13].style.borderBottom = 0;
+		$("tr")[12].children[13].style.borderTop = 0;
+		$("tr")[13].children[13].style.borderBottom = 0;
+		$("tr")[13].children[13].style.borderTop = 0;
+		$("tr")[14].children[13].style.borderBottom = 0;
+		$("tr")[14].children[13].style.borderTop = 0;
+		$("tr")[15].children[13].style.borderTop = 0;
+		$("tr")[15].children[13].style.borderLeft = 0;
+		//第十五列
+		$("tr")[0].children[14].style.borderBottom = 0;
+		$("tr")[1].children[14].style.borderBottom = 0;
+		$("tr")[1].children[14].style.borderTop = 0;
+		$("tr")[2].children[14].style.borderBottom = 0;
+		$("tr")[2].children[14].style.borderTop = 0;
+		$("tr")[3].children[14].style.borderBottom = 0;
+		$("tr")[3].children[14].style.borderTop = 0;
+		$("tr")[4].children[14].style.borderBottom = 0;
+		$("tr")[4].children[14].style.borderTop = 0;
+		$("tr")[5].children[14].style.borderBottom = 0;
+		$("tr")[5].children[14].style.borderTop = 0;
+		$("tr")[5].children[14].style.borderLeft = 0;
+		$("tr")[6].children[14].style.borderBottom = 0;
+		$("tr")[6].children[14].style.borderTop = 0;
+		$("tr")[7].children[14].style.borderBottom = 0;
+		$("tr")[7].children[14].style.borderTop = 0;
+		$("tr")[8].children[14].style.borderBottom = 0;
+		$("tr")[8].children[14].style.borderTop = 0;
+		$("tr")[9].children[14].style.borderBottom = 0;
+		$("tr")[9].children[14].style.borderTop = 0;
+		$("tr")[9].children[14].style.borderLeft = 0;
+		$("tr")[10].children[14].style.borderBottom = 0;
+		$("tr")[10].children[14].style.borderTop = 0;
+		$("tr")[10].children[14].style.borderLeft = 0;
+		$("tr")[11].children[14].style.borderBottom = 0;
+		$("tr")[11].children[14].style.borderTop = 0;
+		$("tr")[12].children[14].style.borderBottom = 0;
+		$("tr")[12].children[14].style.borderTop = 0;
+		$("tr")[13].children[14].style.borderBottom = 0;
+		$("tr")[13].children[14].style.borderTop = 0;
+		$("tr")[14].children[14].style.borderBottom = 0;
+		$("tr")[14].children[14].style.borderTop = 0;
+		$("tr")[15].children[14].style.borderTop = 0;
+		$("tr")[15].children[14].style.borderRight = 0;
+		//第十六列
+		$("tr")[0].children[15].style.borderBottom = 0;
+		$("tr")[1].children[15].style.borderBottom = 0;
+		$("tr")[1].children[15].style.borderTop = 0;
+		$("tr")[2].children[15].style.borderBottom = 0;
+		$("tr")[2].children[15].style.borderTop = 0;
+		$("tr")[3].children[15].style.borderBottom = 0;
+		$("tr")[3].children[15].style.borderTop = 0;
+		$("tr")[4].children[15].style.borderBottom = 0;
+		$("tr")[4].children[15].style.borderTop = 0;
+		$("tr")[5].children[15].style.borderBottom = 0;
+		$("tr")[5].children[15].style.borderTop = 0;
+		$("tr")[6].children[15].style.borderBottom = 0;
+		$("tr")[6].children[15].style.borderTop = 0;
+		$("tr")[7].children[15].style.borderBottom = 0;
+		$("tr")[7].children[15].style.borderTop = 0;
+		$("tr")[8].children[15].style.borderBottom = 0;
+		$("tr")[8].children[15].style.borderTop = 0;
+		$("tr")[9].children[15].style.borderBottom = 0;
+		$("tr")[9].children[15].style.borderTop = 0;
+		$("tr")[10].children[15].style.borderBottom = 0;
+		$("tr")[10].children[15].style.borderTop = 0;
+		$("tr")[11].children[15].style.borderBottom = 0;
+		$("tr")[11].children[15].style.borderTop = 0;
+		$("tr")[12].children[15].style.borderBottom = 0;
+		$("tr")[12].children[15].style.borderTop = 0;
+		$("tr")[13].children[15].style.borderBottom = 0;
+		$("tr")[13].children[15].style.borderTop = 0;
+		$("tr")[14].children[15].style.borderBottom = 0;
+		$("tr")[14].children[15].style.borderTop = 0;
+		$("tr")[15].children[15].style.borderTop = 0;
+		$("tr")[15].children[15].style.borderLeft = 0;
+		$(document).keydown(function(e){
+			if(e.keyCode==37){
+				if(x==0){
+					return;
+				}
+				if($("tr")[y].children[x].style.borderLeft=="1px solid black"){
+					return;
+				}else{
+				    x--;
+				}
+			}
+			if(e.keyCode==38){
+				if(y==0){
+					return;
+				}
+				if($("tr")[y].children[x].style.borderTop=="1px solid black"){
+					return;
+				}else{
+				    y--;
+				}
+			}
+			if(e.keyCode==39){
+				if(x==15){
+					return;
+				}
+				if($("tr")[y].children[x].style.borderRight=="1px solid black"){
+					return;
+				}else{
+				    x++;
+				}
+			}
+			if(e.keyCode==40){
+				if(y==15){
+					return;
+				}
+				if($("tr")[y].children[x].style.borderBottom=="1px solid black"){
+					return;
+				}else{
+				    y++;
+				}
+			}
+			$("td").css("backgroundColor","");
+			$("tr")[y].children[x].style.backgroundColor = "red";
+		})
+	});
+</script>
