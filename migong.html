@@ -716,6 +716,9 @@
 				    y++;
 				}
 			}
+			if(y==15 && x==15) {
+				alert('you win!')
+			}
 			$("td").css("backgroundColor","");
 			$("tr")[y].children[x].style.backgroundColor = "red";
 		})
